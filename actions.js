@@ -87,7 +87,7 @@ function invertHex(hex) {
 function send() {
   var url = $('#addressField').val();
   if(url == '') return false;
-  $.post('http://localhost:9000', {url: url}).done(function(data) {
+  $.post(base_url, {url: url}).done(function(data) {
     console.log(data);
     $('#code').text(base_url + data.code).attr('data-clipboard-text', base_url + data.code);
   });
