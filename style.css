@@ -55,3 +55,9 @@ input[type='submit'] {
 .input {
   display: flex;
   align-items: center; }
+
+#code {
+  display: none; }
+  #code a {
+    color: #FDFCFB;
+    text-decoration: none; }

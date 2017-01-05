@@ -57,3 +57,15 @@ function invertHex(hex) {
 
   return resultnum;
 }
+
+function send() {
+  var url = $('#addressField').val();
+  console.log(url)
+  $.post('http://localhost:9000', {url: url}).done(function(data) {
+    console.log(data);
+    $('#code').css({'display': 'block'});
+    $('#code a').attr('href', data.code);
+    $('#code a').text(data.code);
+  });
+}
+
