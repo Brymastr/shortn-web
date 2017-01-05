@@ -5,19 +5,22 @@
   <title>Shortn | URL Shortener</title>
   <link rel="stylesheet" href="style.css">
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="actions.js"></script>  
+  <script src="node_modules/clipboard/dist/clipboard.min.js"></script>   
+  <script src="actions.js"></script> 
 </head>
 <body>
 
   <div class="container">
     <h2>shortn</h2>
-    <p>Make a long url into a short url</p>
+    <p>turn a long url into a short url. <span id="description"></span></p>
     <div class="input">
-      <input type="text" placeholder="https://webdomain.com/super/long/address/you/would/like/shortened" id="addressField">
-      <input type="submit" value="SHORTN" onclick="send()">
+      <input type="text" placeholder="https://webdomain.com/super/long/address/you/would/like/shortened" id="addressField" autocomplete="off">
+      <input type="submit" value="SHORTN">
+      <div id="code"></div>
+      <div id="notify">COPIED</div>
     </div>
+    
   </div>
-  <div id="code"><a href=""></a></div>
   
 </body>
 </html>
