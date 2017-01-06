@@ -1,5 +1,5 @@
 // var base_url = 'http://localhost:9000/';
-var base_url = 'https://shortn.dorsaydevelopment.ca/';
+var base_url = 'https://short.dorsaydevelopment.ca/';
 
 $(function() {
 
