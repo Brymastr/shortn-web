@@ -8,6 +8,6 @@ app.all('*', (req, res) => {
   res.send('index.html');
 });
 
-app.listen(9001, () => {
+app.listen(80, () => {
   console.log('Running');
 });
