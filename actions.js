@@ -1,5 +1,5 @@
 // var base_url = 'http://localhost:9000/';
-var base_url = 'https://short.dorsaydevelopment.ca/';
+var base_url = 'https://ziip.ca/';
 
 $(function() {
 
@@ -72,7 +72,7 @@ function invertHex(hex) {
   complexnum.E = "1";
   complexnum.F = "0";
 
-  for(i=0; i<6; i++) {
+  for(i = 0; i < 6; i++) {
     if(!isNaN(splitnum[i]))
       resultnum += simplenum[splitnum[i]];
     else if(complexnum[splitnum[i]])
